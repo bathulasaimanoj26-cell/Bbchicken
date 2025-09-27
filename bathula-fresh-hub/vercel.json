@@ -1,4 +1,4 @@
-{
+                                                                                                                                                                                                                                                                                                                                                               {
   "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
@@ -21,7 +21,7 @@
   "headers": [
     {
       "source": "/api/(.*)",
-      "headers": [
+      "headers": [                                                                                                                                                                                                                                                                            
         {
           "key": "Access-Control-Allow-Origin",
           "value": "*"

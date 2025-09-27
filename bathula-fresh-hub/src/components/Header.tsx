@@ -1,6 +1,6 @@
 import { Phone, MessageCircle, ShoppingCart, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/bathulalogo.jpg";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { useState } from "react";
 import { OrderForm } from "./OrderForm";
 import { useNavigate } from "react-router-dom";
@@ -38,11 +38,9 @@ export const Header = () => {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             {/* Logo and Brand */}
             <div className="flex items-center gap-3">
-              <img 
-                src={logo} 
-                alt="Bathula Brothers Logo" 
-                className="h-14 w-auto rounded-full border-2 border-primary"
-              />
+              <Avatar className="h-14 w-14 border-2 border-primary">
+                <AvatarFallback className="bg-primary text-primary-foreground text-2xl font-bold">B</AvatarFallback>
+              </Avatar>
               <div className="text-center sm:text-left">
                 <h1 className="font-heading font-bold text-xl sm:text-2xl text-primary">
                   Bathula Brothers
