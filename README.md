@@ -13,6 +13,7 @@ BBShop/
 ## Setup Instructions
 
 Made some changes
+swaped the sections
 
 
 ### Prerequisites
